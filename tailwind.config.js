@@ -10,6 +10,9 @@ export default {
         "light-green": "#B3C0A4",
         tangerine: "#F96E46",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
