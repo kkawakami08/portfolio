@@ -13,6 +13,9 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        wingspan: "url('@/assets/wingspan.png')",
+      },
     },
   },
   plugins: [],

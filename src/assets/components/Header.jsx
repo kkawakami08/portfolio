@@ -41,25 +41,25 @@ const Header = () => {
           href={resume} // Link to the imported PDF
           target="_blank" // Open in a new tab
           rel="noopener noreferrer" // Security best practice
-          className="text-dark-green text-2xl font-extralight hover:text-tangerine"
+          className="text-dark-green text-2xl font-extralight hover:text-tangerine transition-colors duration-200"
         >
           Resume
         </a>
 
-        <div className="flex items-center text-light-green text-xl font-extralight gap-2">
+        <div className="flex items-center text-light-green text-xl font-extralight gap-2 ">
           <a
             href={"https://github.com/kkawakami08"} // Link to the imported PDF
             target="_blank" // Open in a new tab
             rel="noopener noreferrer" // Security best practice
           >
-            <FaGithubSquare className="text-4xl text-tangerine hover:text-pale-green" />
+            <FaGithubSquare className="text-4xl text-tangerine hover:text-pale-green transition-colors duration-200" />
           </a>
           <a
             href={"https://www.linkedin.com/in/k-kawakami/"} // Link to the imported PDF
             target="_blank" // Open in a new tab
             rel="noopener noreferrer" // Security best practice
           >
-            <FaLinkedin className="text-4xl text-tangerine hover:text-pale-green" />
+            <FaLinkedin className="text-4xl text-tangerine hover:text-pale-green transition-colors duration-200" />
           </a>
         </div>
       </div>

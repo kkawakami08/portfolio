@@ -14,7 +14,7 @@ import Jotai from "@/assets/icons/jotai.svg";
 
 const Skills = () => {
   return (
-    <div className="flex justify-center flex-wrap gap-3 pb-4 ">
+    <div className="flex justify-center flex-wrap gap-3 pt-5 pb-10 ">
       <Html className="w-16 h-16 fill-light-green" />
       <Css className="w-16 h-16 fill-light-green" />
       <Javascript className="w-16 h-16 fill-light-green" />
