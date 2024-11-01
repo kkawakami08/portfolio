@@ -4,15 +4,15 @@ import Skills from "./Skills";
 
 const Header = () => {
   return (
-    <div className="flex flex-col w-full gap-3  text-left ">
-      <p className="text-pale-green text-5xl tracking-wider w-full ">
+    <div className="flex flex-col w-full gap-5  text-center px-6">
+      <p className="text-pale-green font-semibold text-5xl tracking-widest w-full ">
         KAORI KAWAKAMI
       </p>
-      <p className="text-light-green text-2xl font-extralight">
+      <p className="text-pale-green text-xl font-light">
         BA in Animal Science (Pre-Vet)
       </p>
       <hr className="border-t-2 border-beige" />
-      <div className="text-pale-green text-xl pb-2 font-light flex flex-col gap-2">
+      <div className="text-pale-green   font-light flex flex-col gap-2 ">
         <p>
           I’m a creative professional with six years in video editing and 2D
           animation, plus five years in customer service, where I honed my
@@ -35,31 +35,31 @@ const Header = () => {
         </p>
       </div>
       <Skills />
-      <div className="text-dark-green text-2xl font-extralight flex flex-col items-center gap-2 justify-center bg-beige  py-3 rounded-lg">
+      <div className="text-dark-green text-lg  flex flex-col items-center gap-2 justify-center bg-pale-green  py-3 rounded-lg">
         <p className="">k.kawakami08@gmail.com</p>
         <a
           href={resume} // Link to the imported PDF
           target="_blank" // Open in a new tab
           rel="noopener noreferrer" // Security best practice
-          className="text-dark-green text-2xl font-extralight hover:text-tangerine transition-colors duration-200"
+          className="hover:text-tangerine transition-colors duration-200"
         >
           Resume
         </a>
 
-        <div className="flex items-center text-light-green text-xl font-extralight gap-2 ">
+        <div className="flex items-center text-light-green text-3xl  gap-2 ">
           <a
             href={"https://github.com/kkawakami08"} // Link to the imported PDF
             target="_blank" // Open in a new tab
             rel="noopener noreferrer" // Security best practice
           >
-            <FaGithubSquare className="text-4xl text-tangerine hover:text-pale-green transition-colors duration-200" />
+            <FaGithubSquare className=" text-tangerine hover:text-pale-green transition-colors duration-200" />
           </a>
           <a
             href={"https://www.linkedin.com/in/k-kawakami/"} // Link to the imported PDF
             target="_blank" // Open in a new tab
             rel="noopener noreferrer" // Security best practice
           >
-            <FaLinkedin className="text-4xl text-tangerine hover:text-pale-green transition-colors duration-200" />
+            <FaLinkedin className=" text-tangerine hover:text-pale-green transition-colors duration-200" />
           </a>
         </div>
       </div>

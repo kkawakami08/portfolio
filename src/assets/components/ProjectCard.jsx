@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
       className=" w-full flex flex-col items-center bg-pale-green     rounded-lg group cursor-pointer"
       onClick={handleClick}
     >
-      <div className="flex  w-full items-center justify-center gap-5 px-6 py-5 bg-light-green   text-dark-green rounded-t-lg  group-hover:bg-dark-green group-hover:text-pale-green transition-colors duration-200">
+      <div className="flex flex-col w-full justify-center  px-6 py-3 bg-light-green   text-dark-green rounded-t-lg  group-hover:bg-dark-green group-hover:text-pale-green transition-colors duration-200">
         <p className=" text-4xl   text-left ">{project.title.toUpperCase()}</p>
         <p className=" text-xl font-light  text-left ">
           {project.titleDescription}

@@ -13,21 +13,22 @@ import Vite from "@/assets/icons/vite.svg";
 import Jotai from "@/assets/icons/jotai.svg";
 
 const Skills = () => {
+  const iconsClassName = "w-12 h-12 fill-tangerine";
   return (
-    <div className="flex justify-center flex-wrap gap-3 pt-5 pb-10 ">
-      <Html className="w-16 h-16 fill-light-green" />
-      <Css className="w-16 h-16 fill-light-green" />
-      <Javascript className="w-16 h-16 fill-light-green" />
-      <Typescript className="w-16 h-16 fill-light-green" />
-      <Jotai className="w-16 h-16 fill-light-green" />
-      <React className="w-16 h-16 fill-light-green" />
-      <Tailwind className="w-16 h-16 fill-light-green" />
-      <Next className="w-16 h-16 fill-light-green" />
-      <Vite className="w-16 h-16 fill-light-green" />
-      <Mongo className="w-16 h-16 fill-light-green" />
-      <Git className="w-16 h-16 fill-light-green" />
-      <AfterEffects className="w-16 h-16  fill-light-green" />
-      <Illustrator className="w-16 h-16 fill-light-green" />
+    <div className="flex justify-center flex-wrap gap-3 pt-5 pb-8 ">
+      <Html className={iconsClassName} />
+      <Css className={iconsClassName} />
+      <Javascript className={iconsClassName} />
+      <Typescript className={iconsClassName} />
+      <Jotai className={iconsClassName} />
+      <React className={iconsClassName} />
+      <Tailwind className={iconsClassName} />
+      <Next className={iconsClassName} />
+      <Vite className={iconsClassName} />
+      <Mongo className={iconsClassName} />
+      <Git className={iconsClassName} />
+      <AfterEffects className={iconsClassName} />
+      <Illustrator className={iconsClassName} />
     </div>
   );
 };

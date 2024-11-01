@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Nav from "../assets/components/Nav";
 import { ProjectData } from "../data/projectData";
 import { FaGithubSquare } from "react-icons/fa";
+import Footer from "../assets/components/Footer";
 
 const Projects = () => {
   const { title } = useParams();
@@ -11,7 +12,7 @@ const Projects = () => {
   const project = ProjectData[projectIndex];
 
   return (
-    <div className="w-screen bg-gradient-to-br from-dark-green to-dark-green/70 h-fit flex flex-col items-center text-center font-poppins gap-10 relative pb-10">
+    <div className="w-screen bg-gradient-to-br from-dark-green to-dark-green/70 h-fit flex flex-col items-center text-center font-poppins gap-10 relative ">
       <Nav />
       <div className="flex flex-col gap-3 py-8">
         <p className="text-pale-green text-5xl tracking-widest w-full ">
@@ -55,10 +56,11 @@ const Projects = () => {
         </p>
         <p className="text-sm">{project.responsibilities}</p>
       </div>
-      <div className="text-pale-green font-light tracking-wide text-left px-10">
+      <div className="text-pale-green font-light tracking-wide text-left px-10 pb-10">
         <p className="pb-2 text-pale-green text-xl w-full ">Challenges:</p>
         <p className="text-sm">{project.challenges}</p>
       </div>
+      <Footer />
     </div>
   );
 };
