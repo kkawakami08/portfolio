@@ -50,7 +50,13 @@ const Nav = () => {
         <IoMenu className="w-8 h-8 text-pale-green" />
       </button>
 
-      <p className="text-xl text-dark-green font-medium tracking-wider">
+      <p
+        onClick={() => {
+          navigate("/");
+          setIsOpen(false);
+        }}
+        className="text-xl text-dark-green font-medium tracking-wider cursor-pointer"
+      >
         KAORI KAWAKAMI
       </p>
 
