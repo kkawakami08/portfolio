@@ -1,27 +1,25 @@
-import { IoMenu } from "react-icons/io5";
 import { useState, useRef, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef(null);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]); // This will trigger on every route change
 
   const handleMenuClick = (e) => {
-    e.stopPropagation(); // Prevent click from bubbling to document
+    e.stopPropagation();
     setIsOpen((prev) => !prev);
-  };
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   };
 
   const handleNavClick = (path) => {
     navigate(`/projects/${path}`);
     setIsOpen(false);
-    scrollToTop();
   };
 
   useEffect(() => {
@@ -31,12 +29,10 @@ const Nav = () => {
       }
     };
 
-    // Add event listener when dropdown is open
     if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
-    // Cleanup the event listener
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
