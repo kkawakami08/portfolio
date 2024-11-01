@@ -74,7 +74,6 @@ export const ProjectData = [
       <Javascript className={iconClassName} key={"js"} />,
       <React className={iconClassName} key={"rt"} />,
       <Tailwind className={iconClassName} key={"tw"} />,
-      <Vite className={iconClassName} key={"vt"} />,
       <Git className={iconClassName} key={"gt"} />,
     ],
     imgURL: roland,

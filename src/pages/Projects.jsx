@@ -9,7 +9,6 @@ const Projects = () => {
     (project) => project.title === title
   );
   const project = ProjectData[projectIndex];
-  console.log(project);
 
   return (
     <div className="w-screen bg-gradient-to-br from-dark-green to-dark-green/70 h-fit flex flex-col items-center text-center font-poppins gap-10 relative pb-10">
@@ -32,6 +31,7 @@ const Projects = () => {
             className=" text-xl font-extralight hover:text-tangerine transition-colors duration-200"
           >
             Live Preview
+            <p className="text-xs">(Not meant for mobile)</p>
           </a>
         )}
 
@@ -45,18 +45,18 @@ const Projects = () => {
         </a>
       </div>
       <div className="text-pale-green font-light tracking-wide text-left px-10">
-        <p className="pb-2 text-light-green text-xl w-full ">Description:</p>
+        <p className="pb-2 text-pale-green text-xl w-full ">Description:</p>
         <p className="text-sm">{project.description}</p>
       </div>
       <img src={project.imgURL} className="px-10 " />
       <div className="text-pale-green font-light tracking-wide text-left px-10">
-        <p className="pb-2 text-light-green text-xl w-full ">
+        <p className="pb-2 text-pale-green text-xl w-full ">
           Responsibilities:
         </p>
         <p className="text-sm">{project.responsibilities}</p>
       </div>
       <div className="text-pale-green font-light tracking-wide text-left px-10">
-        <p className="pb-2 text-light-green text-xl w-full ">Challenges:</p>
+        <p className="pb-2 text-pale-green text-xl w-full ">Challenges:</p>
         <p className="text-sm">{project.challenges}</p>
       </div>
     </div>
