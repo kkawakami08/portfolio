@@ -41,14 +41,14 @@ const Nav = () => {
   return (
     <div
       ref={navRef}
-      className="bg-light-green w-full flex items-center justify-between px-5 py-3 sticky top-0 hover:text-tangerine"
+      className="bg-light-green w-full flex items-center justify-between px-5 py-2 sticky top-0 hover:text-tangerine"
     >
-      <button
+      <p
         onClick={handleMenuClick}
-        className="p-1 hover:bg-pale-green rounded-full transition-colors"
+        className="p-1  rounded-full transition-colors"
       >
-        <IoMenu className="w-8 h-8 text-pale-green" />
-      </button>
+        <IoMenu className="w-8 h-8 text-pale-green hover:text-dark-green" />
+      </p>
 
       <p
         onClick={() => {
@@ -62,7 +62,7 @@ const Nav = () => {
 
       {isOpen && (
         <div className="absolute w-full bg-pale-green text-dark-green left-0 top-full flex flex-col items-start px-6 gap-2 py-3 rounded-b-lg">
-          <button
+          <p
             onClick={() => {
               navigate("/");
               setIsOpen(false);
@@ -70,27 +70,27 @@ const Nav = () => {
             className="hover:text-tangerine transition-colors"
           >
             HOME
-          </button>
+          </p>
           <p>PROJECTS</p>
           <div className="cursor-pointer flex flex-col items-start gap-2 px-5 font-light">
-            <button
+            <p
               onClick={() => handleNavClick("wingspan")}
               className="hover:text-tangerine transition-colors"
             >
               Wingspan
-            </button>
-            <button
+            </p>
+            <p
               onClick={() => handleNavClick("trails")}
               className="hover:text-tangerine transition-colors"
             >
               Trails
-            </button>
-            <button
+            </p>
+            <p
               onClick={() => handleNavClick("refactor")}
               className="hover:text-tangerine transition-colors"
             >
               AI Refactor
-            </button>
+            </p>
           </div>
         </div>
       )}
