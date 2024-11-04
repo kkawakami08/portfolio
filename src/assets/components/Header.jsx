@@ -4,8 +4,8 @@ import Skills from "./Skills";
 
 const Header = () => {
   return (
-    <div className="flex flex-col w-full gap-5  text-center px-6 lg:px-14 xl:w-3/4">
-      <p className="text-pale-green font-semibold text-5xl tracking-widest w-full ">
+    <div className="flex flex-col w-full gap-5  text-center px-6 md:px-10 lg:px-0 xl:w-3/5 lg:w-3/4">
+      <p className="text-pale-green font-semibold sm:text-5xl text-4xl tracking-widest w-full ">
         KAORI KAWAKAMI
       </p>
       <p className="text-pale-green text-xl font-light">

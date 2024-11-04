@@ -4,7 +4,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const ProjectList = () => {
   return (
-    <div className="w-full gap-6  flex flex-col items-center px-5 lg:grid lg:grid-cols-3 xl:w-5/6">
+    <div className="w-full gap-6  flex flex-col items-center px-5 lg:grid lg:grid-cols-3 xl:w-5/6 pb-28 lg:px-10 ">
       <p className="text-pale-green text-5xl tracking-wider w-full lg:col-span-3">
         PROJECTS
       </p>

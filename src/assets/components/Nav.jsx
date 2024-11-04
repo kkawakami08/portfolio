@@ -41,7 +41,7 @@ const Nav = () => {
   return (
     <div
       ref={navRef}
-      className="bg-light-green w-full flex items-center justify-between px-5 py-2 sticky top-0 hover:text-tangerine"
+      className="bg-light-green w-screen  flex items-center justify-between px-5 py-2 sticky top-0 hover:text-tangerine"
     >
       <p
         onClick={handleMenuClick}
@@ -55,7 +55,7 @@ const Nav = () => {
           navigate("/");
           setIsOpen(false);
         }}
-        className="text-xl text-dark-green font-medium tracking-wider cursor-pointer"
+        className="text-xl text-dark-green font-medium tracking-wider cursor-pointer pr-3"
       >
         KAORI KAWAKAMI
       </p>

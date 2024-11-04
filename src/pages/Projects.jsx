@@ -12,7 +12,7 @@ const Projects = () => {
   const project = ProjectData[projectIndex];
 
   return (
-    <div className="w-screen bg-gradient-to-br from-dark-green to-dark-green/70 h-fit  text-center font-poppins  relative flex flex-col items-center ">
+    <div className="w-screen bg-gradient-to-br from-dark-green to-dark-green/70 h-fit 2xl:h-screen text-center font-poppins  relative flex flex-col items-center justify-between pb-5">
       <Nav />
       <div className="flex flex-col items-center gap-10 lg:px-14 xl:w-3/4 py-10">
         <div className="flex flex-col gap-3 py-8 ">
@@ -50,20 +50,27 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="text-pale-green font-light tracking-wide text-left px-10">
-          <p className="pb-2 text-pale-green text-xl w-full ">Description:</p>
-          <p className="text-sm">{project.description}</p>
-        </div>
-        <img src={project.imgURL} className="px-10 " />
-        <div className="text-pale-green font-light tracking-wide text-left px-10">
-          <p className="pb-2 text-pale-green text-xl w-full ">
-            Responsibilities:
-          </p>
-          <p className="text-sm">{project.responsibilities}</p>
-        </div>
-        <div className="text-pale-green font-light tracking-wide text-left px-10 pb-10">
-          <p className="pb-2 text-pale-green text-xl w-full ">Challenges:</p>
-          <p className="text-sm">{project.challenges}</p>
+        <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-10 2xl:w-3/4">
+          <div className="text-pale-green font-light tracking-wide text-left px-10 ">
+            <p className="pb-2 text-pale-green text-xl w-full ">Description:</p>
+            <p className="text-sm">{project.description}</p>
+          </div>
+          <div className="w-full px-10 lg:col-start-1 lg:col-span-2 lg:row-start-1 flex justify-center">
+            <img
+              src={project.imgURL}
+              className="2xl:w-3/4 border-2 md:border-4 rounded-lg border-dark-green"
+            />
+          </div>
+          <div className="text-pale-green font-light tracking-wide text-left px-10 ">
+            <p className="pb-2 text-pale-green text-xl w-full ">
+              Responsibilities:
+            </p>
+            <p className="text-sm">{project.responsibilities}</p>
+          </div>
+          <div className="text-pale-green font-light tracking-wide text-left px-10 pb-10 lg:col-span-2">
+            <p className="pb-2 text-pale-green text-xl w-full ">Challenges:</p>
+            <p className="text-sm">{project.challenges}</p>
+          </div>
         </div>
       </div>
       <Footer />
