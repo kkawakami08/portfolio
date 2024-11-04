@@ -15,7 +15,7 @@ import Jotai from "@/assets/icons/jotai.svg";
 const Skills = () => {
   const iconsClassName = "w-12 h-12 fill-tangerine";
   return (
-    <div className="flex justify-center flex-wrap gap-3 pt-5 pb-8 lg:row-start-2 lg:col-span-5 lg:pb-0">
+    <div className="flex justify-center flex-wrap gap-3 pt-5 pb-8 lg:row-start-2 lg:col-span-2 lg:pb-0 ">
       <Html className={iconsClassName} />
       <Css className={iconsClassName} />
       <Javascript className={iconsClassName} />

@@ -13,7 +13,7 @@ const Header = () => {
       </p>
       <hr className="border-t-2 border-beige" />
       <div className="flex flex-col gap-3 lg:grid lg:grid-cols-5 lg:pt-5 lg:gap-5">
-        <div className="text-pale-green   font-light flex flex-col gap-2 lg:col-span-3 lg:text-left">
+        <div className="text-pale-green   font-light flex flex-col gap-2 lg:col-span-3 lg:text-left lg:row-span-2 lg:row-start-1 ">
           <p>
             I’m a creative professional with six years in video editing and 2D
             animation, plus five years in customer service, where I honed my
