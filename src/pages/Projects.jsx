@@ -12,7 +12,7 @@ const Projects = () => {
   const project = ProjectData[projectIndex];
 
   return (
-    <div className="w-screen bg-gradient-to-br from-dark-green to-dark-green/70 h-fit 2xl:h-screen text-center font-poppins  relative flex flex-col items-center justify-between pb-5">
+    <div className="w-screen bg-gradient-to-br from-dark-green to-dark-green/70 h-fit  text-center font-poppins  relative flex flex-col items-center justify-between pb-5">
       <Nav />
       <div className="flex flex-col items-center gap-10 lg:px-14 xl:w-3/4 py-10">
         <div className="flex flex-col gap-3 py-8 ">
