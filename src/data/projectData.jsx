@@ -3,6 +3,11 @@ import trails from "@/assets/trails.png";
 import roland from "@/assets/roland.png";
 import rental from "@/assets/rental.png";
 
+import login1 from "@/assets/property/login-1.png";
+import login2 from "@/assets/property/login-2.png";
+import login3 from "@/assets/property/login-3.png";
+import login4 from "@/assets/property/login-4.png";
+
 import AfterEffects from "@/assets/icons/after-effects.svg";
 import Css from "@/assets/icons/css.svg";
 import Git from "@/assets/icons/git.svg";
@@ -80,6 +85,7 @@ export const ProjectData = [
       <Mongo className={iconClassName} key={"mg"} />,
     ],
     imgURL: rental,
+    images: [login1, login2, login3, login4],
     description:
       "Developed a full-stack property rental platform using Next.js, React, Tailwind, MongoDB, and Mongoose, allowing users to list, bookmark, message owners, search, and share property listings.",
     responsibilities:

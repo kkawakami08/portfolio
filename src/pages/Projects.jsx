@@ -57,11 +57,28 @@ const Projects = () => {
             <p className="pb-2 text-pale-green text-xl w-full ">Description:</p>
             <p className="text-sm">{project.description}</p>
           </div>
-          <div className="w-full px-10 lg:col-start-1 lg:col-span-2 lg:row-start-1 flex justify-center">
+          <div className="  w-full px-10 lg:col-start-1 lg:col-span-2 lg:row-start-1 flex flex-col gap-5 items-center">
             <img
               src={project.imgURL}
               className="2xl:w-3/4 border-2 md:border-4 rounded-lg border-dark-green"
             />
+            {title == "property rental site" && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 place-content-center ">
+                <p className="text-sm text-pale-green font-light text-left md:col-span-2">
+                  Login Capabilities have been disabled as to not flood my
+                  database. These include adding new properties, bookmarking
+                  properties, and contacting the property owner. Here are some
+                  screenshots of what it looks like.
+                </p>
+                {project.images.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    className=" w-full border-2 md:border-4 rounded-lg border-dark-green"
+                  />
+                ))}
+              </div>
+            )}
           </div>
           <div className="text-pale-green font-light tracking-wide text-left px-10 ">
             <p className="pb-2 text-pale-green text-xl w-full ">
