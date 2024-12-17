@@ -8,6 +8,7 @@ const Header = () => {
       <p className="text-pale-green font-semibold sm:text-5xl text-4xl tracking-widest w-full ">
         KAORI KAWAKAMI
       </p>
+      <p className="text-pale-green text-xl font-light">Front End Developer</p>
       <p className="text-pale-green text-xl font-light">
         BA in Animal Science (Pre-Vet)
       </p>
@@ -15,24 +16,15 @@ const Header = () => {
       <div className="flex flex-col gap-3 lg:grid lg:grid-cols-5 lg:pt-5 lg:gap-5">
         <div className="text-pale-green   font-light flex flex-col gap-2 lg:col-span-3 lg:text-left lg:row-span-2 lg:row-start-1 ">
           <p>
-            I’m a creative professional with six years in video editing and 2D
-            animation, plus five years in customer service, where I honed my
-            communication and problem-solving skills.
-          </p>
-          <p>
-            I've spent the past two years diving into the world of coding and
-            software development, with a particular focus on web development and
-            interactive applications.
-          </p>
-          <p>
-            {" "}
-            One of my proudest projects is my recreation of the Wingspan board
-            game as an online application, a complex yet rewarding project that
-            merges my coding skills with my passion for board games.
-          </p>
-          <p>
-            Beyond my work, I enjoy sewing, playing the piano, and a good board
-            game.
+            I'm a self-driven front-end developer with over 2 years of
+            experience, driven by a passion for solving logic puzzles and
+            tackling complex problems. I built my programming foundation through
+            Codecademy courses and self-directed projects, and I’ve also
+            leveraged my 6 years of experience in 2D animation to create
+            engaging web experiences. I blend technical skills with a keen eye
+            for design to craft intuitive, responsive interfaces. My experience
+            working on projects like recreating digital board games has helped
+            me refine my ability to manage complex state and optimize codebases.
           </p>
         </div>
         <Skills />

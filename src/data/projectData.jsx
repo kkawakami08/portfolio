@@ -1,6 +1,7 @@
 import wingspan from "@/assets/wingspan.png";
 import trails from "@/assets/trails.png";
 import roland from "@/assets/roland.png";
+import rental from "@/assets/rental.png";
 
 import AfterEffects from "@/assets/icons/after-effects.svg";
 import Css from "@/assets/icons/css.svg";
@@ -66,24 +67,26 @@ export const ProjectData = [
       "While design aspects are largely complete, upcoming goals include integrating full game logic and enhancing the user experience with improved interactions and refined visuals.",
   },
   {
-    title: "refactor",
-    titleDescription: "AI Generated Code",
-    preview: null,
-    github: "https://github.com/kkawakami08/roland-j6-refactored",
+    title: "property rental site",
+    titleDescription: "Full Stack Project",
+    preview: "https://rental-property-pi.vercel.app/",
+    github: "https://github.com/kkawakami08/rental-property",
     skills: [
       <Javascript className={iconClassName} key={"js"} />,
       <React className={iconClassName} key={"rt"} />,
       <Tailwind className={iconClassName} key={"tw"} />,
       <Git className={iconClassName} key={"gt"} />,
+      <Next className={iconClassName} key={"nt"} />,
+      <Mongo className={iconClassName} key={"mg"} />,
     ],
-    imgURL: roland,
+    imgURL: rental,
     description:
-      "A refactoring project aimed at optimizing an existing application originally developed with AI-assisted code. The project focused on enhancing code quality, organization, and readability for easier maintenance and future development.",
+      "Developed a full-stack property rental platform using Next.js, React, Tailwind, MongoDB, and Mongoose, allowing users to list, bookmark, message owners, search, and share property listings.",
     responsibilities:
-      "I conducted a code review to identify redundancies, restructured the codebase for better modularity, and applied naming conventions for clarity. I also updated comments and documentation to enhance code usability.",
+      "Led the design and implementation of user authentication, property listing management, search functionality, and social media integration.",
     challenges:
-      "Refactoring required balancing simplicity with functionality, particularly in eliminating duplicate code without impacting core features. Improving readability and maintainability was key for future scalability.",
+      "Overcame the challenge of learning to integrate the backend with the frontend, particularly in managing data flow between MongoDB, Mongoose, and the Next.js server actions for smooth property listing interactions and user authentication.",
     results:
-      "The refactored application is now more efficient and accessible, establishing a cleaner codebase and best practices for ongoing development.",
+      " Successfully delivered a feature-rich platform that improved user engagement, simplified property discovery, and increased listings visibility through integrated social sharing options.",
   },
 ];

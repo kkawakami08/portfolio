@@ -36,7 +36,9 @@ const Projects = () => {
                 className=" text-xl font-extralight hover:text-tangerine transition-colors duration-200"
               >
                 Live Preview
-                <p className="text-xs">(Not meant for mobile)</p>
+                {title !== "property rental site" && (
+                  <p className="text-xs">(Not meant for mobile)</p>
+                )}
               </a>
             )}
 

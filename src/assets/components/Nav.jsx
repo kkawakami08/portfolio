@@ -86,10 +86,10 @@ const Nav = () => {
               Trails
             </p>
             <p
-              onClick={() => handleNavClick("refactor")}
+              onClick={() => handleNavClick("property rental site")}
               className="hover:text-tangerine transition-colors"
             >
-              AI Refactor
+              Property Rental Site
             </p>
           </div>
         </div>
